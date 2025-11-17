@@ -53,33 +53,88 @@
             font-size: 0.95em;
             color: #000000;
         }
+
+        .countdown-style {
+            vertical-align:top; padding-right:0.1rem;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            text-align: center;
+        }
+
+
+        .countdowntext {
+            font-size: 36px;
+            text-align: center;
+            margin:0 0 0.1rem 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Zsuzsi & Gaben</h1>
-        <h2>Ünnepelj velünk ezen a különleges napon!</h2>
-        
-        <div class="section">
-            <h3>Helyszín</h3>
-            <p>Geréby Kúria Hotel és Lovasudvar - Katinka terem<br>
-            6050 Lajosmizse, Alsólajos tanya 224.</p>
-        </div>
-        
-        <div class="section">
-            <h3>Dátum</h3>
-            <p>2026. 06. 20.</p>
-        </div>
-        
-        <div class="section">
-            <h3>Program</h3>
-            <ul>
-                <li>15:45 Vendégvárás</li>
-                <li>16:30 Szertartás</li>
-                <li>17:00 Fotózkodás</li>
-                <li>18:00 Lakodalom</li>
-            </ul>
-        </div>
+
+        <br><br><br>
+
+        <table style="width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0;">
+            <tr>
+                <td class="countdown-style">
+                    <p id="countdownDays" style="margin:0;"></p>
+                </td>
+                <td class="countdown-style">
+                    <p id="countdownHours" style="margin:0;"></p>
+                </td>
+                <td class="countdown-style">
+                    <p id="countdownMinutes" style="margin:0;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="countdowntext">
+                    <p style="margin:0;">Nap</p>
+                </td>
+                <td class="countdowntext">
+                    <p style="margin:0;">Óra</p>
+                </td>
+                <td class="countdowntext">
+                    <p style="margin:0;">Perc</p>
+                </td>
+            </tr>
+        </table>
+
+        <p class="small" style="text-align: center;">Ünnepelj velünk ezen a különleges napon!</p>
+
+        <br>
+
+        <table style="width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0;">
+            <tr>
+                <td style="vertical-align:top; padding-right:0.5rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Helyszín</h3>
+                </td>
+                <td style="vertical-align:top; padding:0 0.5rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Dátum</h3>
+                </td>
+                <td style="vertical-align:top; padding-left:0.5rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Program</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; padding-left:0.5rem; text-align:center;">
+                    <p style="margin:0;">Geréby Kúria Hotel és Lovasudvar - Katinka terem<br>
+                        6050 Lajosmizse, Alsólajos tanya 224.</p>
+                </td>
+                <td style="vertical-align:top; padding-left:0.5rem; text-align:center;">
+                    <p style="margin:0;">2026. 06. 20.</p>
+                </td>
+                <td style="vertical-align:top; padding-left:0.5rem; text-align:center;">
+                    <div style="display:inline-block; text-align:left; line-height:1.1;">
+                        15:45 Vendégvárás <br>
+                        16:30 Szertartás<br>
+                        17:00 Fotózkodás<br>
+                        18:00 Lakodalom
+                    </div>
+                </td>
+            </tr>
+        </table>
 
         <div class="section">
             <p><span class="mark">Kérjük 2026. május 1-ig jelezd felénk részvételi szándékodat!</span></p>
@@ -144,3 +199,28 @@
     </div>
 </body>
 </html>
+
+<script>
+    var countDownDate = new Date("Jun 20, 2026 15:45:00").getTime();
+
+    var x = setInterval(function () {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        document.getElementById("countdownDays").innerHTML = days;
+        document.getElementById("countdownHours").innerHTML = hours;
+        document.getElementById("countdownMinutes").innerHTML = minutes;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+
+    }, 1000);
+</script>
+
