@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Zsuzsi & Gaben – Esküvői Meghívó</title>
+    <title>Zsuzsi & Gaben Esküvője</title>
     <style>
         body {
             font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
@@ -43,31 +43,35 @@
             color: #000000;
         }
 
-        ul, ol {
-            margin-left: 2rem;
+        p {
+            vertical-align:top;
+            text-align:center;
         }
 
         .section {
             margin-bottom: 2em;
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
         }
 
         .mark {
             font-weight: bold;
             color: #000000;
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
         }
 
         .small {
             font-size: 0.95em;
             color: #000000;
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
         }
 
         .countdown-style {
             vertical-align: top;
             padding-right: 0.1rem;
             align-items: center;
-            font-family: Arial, sans-serif;
             font-size: 36px;
             text-align: center;
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
         }
 
 
@@ -75,12 +79,29 @@
             font-size: 36px;
             text-align: center;
             margin: 0 0 0.1rem 0;
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+        }
+
+        .buttonstyle {
+            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+            min-width:140px;
+            cursor:pointer;
+            background:#dff7e6;
+            color: #000000;
+            border:1px solid #c6efcf;
+            padding:0.5rem 1rem;
+            border-radius:12px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.08);
+            transition:background 150ms ease;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Zsuzsi & Gaben</h1>
+        <p style="font-family: 'Palace Script MT', cursive, sans-serif; font-size: 150px; margin-bottom: 0; text-align: center">
+            Zsuzsi & Gaben
+        </p>
 
         <br><br><br>
 
@@ -150,23 +171,29 @@
         <br>
 
         <div class="section" style="text-align: center;">
-            <p><span class="mark">Kérjük 2026. május 1-ig jelezd felénk részvételi szándékodat!</span></p>
+            <table style="width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0;">
+                <tr>
+                    <p><span class="mark"  style="text-decoration: underline; font-size: 20px">Kérjük 2026. május 1-ig jelezd felénk részvételi szándékodat!</span></p>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top; padding-left:0.5rem; text-align:center;">
+                        <button type="button" class="buttonstyle" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe_nROVGY-r5hGVdUC0HfgVBF5Pqp7eLQtQJQ186-oIa3onFQ/viewform?usp=dialog', '_blank');">Visszajelzek</button>
+                    </td>
+
+                    <td style="vertical-align:top; padding-left:0.5rem; text-align:center;">
+                        <button type="button" class="buttonstyle">Szobafoglalás</button>
+                    </td>
+                </tr>
+
+            </table>
+
+
             <div style="display:flex; flex-direction: column;">
-                <button style="min-width:140px; align-self: baseline">Visszajelzek</button>
-                <button style="min-width:140px; align-self: end">Szobafoglalás</button>
             </div>
         </div>
 
         <div class="section">
             <h3>Néhány információt még szeretnénk veled megosztani. Ezeket kérjük olvasd el!</h3>
-            <h2>Pár hagyományt megszegünk, így ezekre ne készülj!</h2>
-
-            <ul>
-                <li>Nem járunk majd menyasszonytáncot.</li>
-                <li>Ha szeretnél nekünk gratulálni vagy megajándékozni, a szertartás utáni fotózás során megteheted.</li>
-                <li>Kihagyjuk a csokor és harisnyakötő dobást, illetve a vonatozást és a limbó partit.</li>
-                <li>A vad mozdulataidat azonban szívesen látjuk a táncparketten! ;)</li>
-            </ul>
         </div>
 
         <div class="section">
@@ -177,16 +204,14 @@
 
         <div class="section">
             <h3>Fénykép, Videó, Social Media</h3>
-            <ul>
-                <li>Kérjük a nap folyamán <span class="mark">NE FOTÓZZ, NE VIDEÓZZ!</span> Inkább éld meg a pillanatot.</li>
-                <li>A nagy nap során profi fotós és videós csapatunk is velünk tart, akik mindent megörökítenek. Ne aggódj,
+                <p>Kérjük a nap folyamán <span class="mark">NE FOTÓZZ, NE VIDEÓZZ!</span> Inkább éld meg a pillanatot.</p>
+                <p>A nagy nap során profi fotós és videós csapatunk is velünk tart, akik mindent megörökítenek. Ne aggódj,
                     nem maradsz le semmiről! A képeket az esemény után mindenkinek elküldjük.
-                </li>
-                <li>Kérjük az eseményről <span class="mark">NE POSZTOLJ</span> az interneten! Szeretnénk privát személyes
+                </p>
+                <p>Kérjük az eseményről <span class="mark">NE POSZTOLJ</span> az interneten! Szeretnénk privát személyes
                     emlékként megőrizni ezt a napot és ha úgy érezzük az emlékeket mi magunk közzétenni, másokkal
                     megosztani.
-                </li>
-            </ul>
+                </p>
         </div>
 
         <div class="section">
