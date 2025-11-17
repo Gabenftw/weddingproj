@@ -14,6 +14,7 @@
             padding: 0;
             min-height: 100vh;
         }
+
         body::before {
             content: "";
             position: fixed;
@@ -21,41 +22,48 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: rgba(255,255,255,0.2); /* white overlay, 0.5 opacity */
+            background: rgba(255, 255, 255, 0.2); /* white overlay, 0.5 opacity */
             pointer-events: none;
             z-index: 0;
         }
+
         .container {
             position: relative;
             z-index: 1;
-            background: rgba(255,255,255,0.8); /* white overlay, 0.5 opacity */
+            background: rgba(255, 255, 255, 0.8); /* white overlay, 0.5 opacity */
             margin: 3rem auto;
             max-width: 700px;
             padding: 2rem 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
         }
+
         h1, h2, h3 {
             text-align: center;
             color: #000000;
         }
+
         ul, ol {
             margin-left: 2rem;
         }
+
         .section {
             margin-bottom: 2em;
         }
+
         .mark {
             font-weight: bold;
             color: #000000;
         }
+
         .small {
             font-size: 0.95em;
             color: #000000;
         }
 
         .countdown-style {
-            vertical-align:top; padding-right:0.1rem;
+            vertical-align: top;
+            padding-right: 0.1rem;
             align-items: center;
             font-family: Arial, sans-serif;
             font-size: 36px;
@@ -66,7 +74,7 @@
         .countdowntext {
             font-size: 36px;
             text-align: center;
-            margin:0 0 0.1rem 0;
+            margin: 0 0 0.1rem 0;
         }
     </style>
 </head>
@@ -100,6 +108,8 @@
                 </td>
             </tr>
         </table>
+
+        <br>
 
         <p class="small" style="text-align: center;">Ünnepelj velünk ezen a különleges napon!</p>
 
@@ -136,66 +146,126 @@
             </tr>
         </table>
 
-        <div class="section">
+        <br>
+        <br>
+
+        <div class="section" style="text-align: center;">
             <p><span class="mark">Kérjük 2026. május 1-ig jelezd felénk részvételi szándékodat!</span></p>
-            <button>Visszajelzek</button> &nbsp; <button>Szobafoglalás</button>
+            <div style="display:flex; flex-direction: column;">
+                <button style="min-width:140px; align-self: baseline">Visszajelzek</button>
+                <button style="min-width:140px; align-self: end">Szobafoglalás</button>
+            </div>
         </div>
 
         <div class="section">
-            <h3>Fontos információk</h3>
+            <h3>Néhány információt még szeretnénk veled megosztani. Ezeket kérjük olvasd el!</h3>
+            <h2>Pár hagyományt megszegünk, így ezekre ne készülj!</h2>
+
             <ul>
-                <li>Pár hagyományt megszegünk, így ezekre ne készülj!</li>
                 <li>Nem járunk majd menyasszonytáncot.</li>
                 <li>Ha szeretnél nekünk gratulálni vagy megajándékozni, a szertartás utáni fotózás során megteheted.</li>
                 <li>Kihagyjuk a csokor és harisnyakötő dobást, illetve a vonatozást és a limbó partit.</li>
                 <li>A vad mozdulataidat azonban szívesen látjuk a táncparketten! ;)</li>
             </ul>
         </div>
-        
-        <div class="section">
-            <h3>Nászajándék átadása</h3>
-            <p>A hagyományoktól eltérően nem lesz menyasszonytánc, így a nekünk szánt ajándékot, gratulációt a szertartás után, egy közös fotó készítésével egybekötve tudod majd átadni. Erre a célra asztalt és dobozt is helyezünk majd ki, ceremónia mesterünk pedig mindenkit név szerint szólít majd a fotózkodáshoz.</p>
-        </div>
 
         <div class="section">
-            <h3>Ajándék, Sütemény, Itókák</h3>
-            <p>A szertartás előtt és a vacsora alatt is bőséges választékkal készülünk, erre ne legyen gondod.</p>
-        </div>
-
-        <div class="section">
-            <h3>Kisállatok</h3>
-            <p>Kérjük kisállatod ne hozd magaddal.</p>
-        </div>
-
-        <div class="section">
-            <h3>Fotózkodás</h3>
-            <p>A szertartás után profi fotósaink fognak gondoskodni minden egyéni és csoportos kép elkészítéséről.</p>
-        </div>
-
-        <div class="section">
-            <h3>Gyerekek</h3>
-            <p>Bár nagyon szeretjük a gyerekeket, esküvőnk "felnőttbarát" esemény lesz.<br>
-            Szeretnénk, ha minden jelenlévő kötetlenül tudna szórakozni. Ezért kérjük - amennyiben meg tudod oldani - gyermekeidet ne hozd magaddal.</p>
+            <h3>Bár nagyon szeretjük a gyerekeket, esküvőnk “felnőttbarát” esemény lesz. </h3>
+            <p>Szeretnénk, ha minden jelenlévő kötetlenül tudna szórakozni. Ezért kérjük - amennyiben meg tudod oldani -
+                gyermekeidet ne hozd magaddal.</p>
         </div>
 
         <div class="section">
             <h3>Fénykép, Videó, Social Media</h3>
             <ul>
                 <li>Kérjük a nap folyamán <span class="mark">NE FOTÓZZ, NE VIDEÓZZ!</span> Inkább éld meg a pillanatot.</li>
-                <li>A nagy nap során profi fotós és videós csapatunk is velünk tart, akik mindent megörökítenek. Ne aggódj, nem maradsz le semmiről! A képeket az esemény után mindenkinek elküldjük.</li>
-                <li>Kérjük az eseményről <span class="mark">NE POSZTOLJ</span> az interneten! Szeretnénk privát személyes emlékként megőrizni ezt a napot és ha úgy érezzük az emlékeket mi magunk közzétenni, másokkal megosztani.</li>
+                <li>A nagy nap során profi fotós és videós csapatunk is velünk tart, akik mindent megörökítenek. Ne aggódj,
+                    nem maradsz le semmiről! A képeket az esemény után mindenkinek elküldjük.
+                </li>
+                <li>Kérjük az eseményről <span class="mark">NE POSZTOLJ</span> az interneten! Szeretnénk privát személyes
+                    emlékként megőrizni ezt a napot és ha úgy érezzük az emlékeket mi magunk közzétenni, másokkal
+                    megosztani.
+                </li>
             </ul>
         </div>
 
         <div class="section">
-            <h3>Jegyesfotózás</h3>
-            <p>Less be jegyesfotózásunk legszebb pillanataiba! (tavasztól)</p>
+            <h3>Less be jegyesfotózásunk legszebb pillanataiba! (tavasztól)</h3>
         </div>
 
         <div class="section">
             <h3>Dress Code</h3>
-            <p>Kérjük érkezz elegánsan, az alkalomnak megfelelően. A legfontosabb mégiscsak az, hogy tudj majd benne táncolni.</p>
+            <p>Kérjük érkezz elegánsan, az alkalomnak megfelelően. A legfontosabb mégiscsak az, hogy tudj majd benne
+                táncolni.</p>
+            <p>A piros, fehér, fekete színeket a hagyományokhoz híven kérjük kerüld.</p>
+
         </div>
+
+        <div class="section">
+
+            <h3>Gyakori Kérdések</h3>
+        </div>
+
+        <div class="section">
+
+            <h3>Allergiás vagyok, mire figyeljek? </h3>
+
+            <p style="text-align: center;">ÉTELALLERGIÁD kérjük időben jelezd a visszajelző íven és a vacsora rendelésénél arra figyelemmel leszünk. A
+            kúria kertjében számos virágzó növény található és az őket beporzó rovarok. A kert nem telepített, szabadon
+            megteremhet bármi. Érdemes az ALLERGIAGYÓGYSZERED magaddal hozni! A helyszínen továbbá lovak találhatóak -
+            szénanáthások figyelem.</p>
+        </div>
+        <div class="section">
+
+            <h3>Milyen nászajándéknak örülne az ifjú pár?</h3>
+
+            <p>Ha szeretnél megajándékozni minket, akkor kérjük, azt anyagiak formájában tedd, mert azt tudjuk a legjobban
+            hasznosítani. Minden nekünk szánt kedvességet előre is köszönünk!</p>
+        </div>
+        <div class="section">
+
+            <h3>Mikor tudom odaadni a nászajándékot?</h3>
+
+            <p style="text-align: center;">A hagyományoktól eltérően nem lesz menyasszonytánc, így a nekünk szánt ajándékot, gratulációt a szertartás után,
+            egy közös fotó készítésével egybekötve tudod majd átadni. Erre a célra asztalt és dobozt is helyezünk majd ki,
+            ceremónia mesterünk pedig mindenkit név szerint szólít majd a fotózkodáshoz.</p>
+
+        </div>
+        <div class="section">
+            <h3>Hoznék némi háztáji süteményt, itókát, vihetek?</h3>
+
+            <p style="text-align: center;">A szertartás előtt és a vacsora alatt is bőséges választékkal készülünk, erre ne legyen gondod.</p>
+
+        </div>
+        <div class="section">
+            <h3>A kis kedvencem velem jöhet?</h3>
+
+            <p style="text-align: center;">Kérjük kisállatod ne hozd magaddal.</p>
+        </div>
+        <div class="section">
+
+            <h3>Mikor tudunk közös képet készíteni?</h3>
+
+            <p style="text-align: center;">A szertartás után profi fotósaink fognak gondoskodni minden egyéni és csoportos kép elkészítéséről.</p>
+        </div>
+        <div class="section">
+
+            <h3> Gyerkőccel érkeznék, mire számíthatok?</h3>
+
+            <p style="text-align: center;">A kúria kertjében játszótér várja a legkisebbeket és a park is sok lehetőséget rejt a kalandszerzésre. A lovas
+            kifutó szintén izgalmas látványt nyújthat számukra. A legjobb mégiscsak az, ha a kedvenc (1db) játékuk velük
+            van. Kérjük ne hagyjátok a gyerekeket egyedül játszani a kertben, a medencék vagy a tó körül és ügyeljetek rá,
+            hogy ne zavarják a nap eseményeit. A vacsorához magasított gyerekülés igényeteket a visszajelző íven
+            tüntethetitek fel.</p>
+        </div>
+        <div class="section">
+
+            <h3> Honnan fogom tudni, hogy mikor, mi történik és hova kell menni?</h3>
+
+            <p style="text-align: center;">Ceremóniamesterünk fogja mindig mondani a hasznos információkat, kérjük hallgass rá. Tőle és a koszorúslányoktól
+            bármikor kérdezhetsz. Ezenkívül a kihelyezett táblákról és a honlapon található programból tájékozódhatsz.</p>
+        </div>
+
     </div>
 </body>
 </html>
