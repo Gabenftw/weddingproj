@@ -4,107 +4,7 @@
     <meta charset="UTF-8">
     <title>Zsuzsi & Gaben Esküvője</title>
     <link rel="icon" type="image/png" href="sources/favicon.png">
-    <style>
-        body {
-            font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-            background-image: url('sources/background.png');
-            background-size: auto;
-            background-repeat: repeat;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(255, 255, 255, 0.2); /* white overlay, 0.5 opacity */
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .container {
-            position: relative;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.8); /* white overlay, 0.5 opacity */
-            margin: 3rem auto;
-            max-width: 700px;
-            padding: 2rem 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: #000000;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        p {
-            vertical-align:top;
-            text-align:center;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        details {
-            text-align:center;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-        summary {
-            cursor: pointer;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        .section {
-            margin-bottom: 2em;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        .mark {
-            font-weight: bold;
-            color: #000000;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        .italic {
-            font-style: italic;
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-        }
-
-        .countdown-style {
-            vertical-align: top;
-            padding-right: 0.1rem;
-            align-items: center;
-            font-size: 36px;
-            text-align: center;
-        }
-
-        .countdowntext {
-            font-size: 36px;
-            text-align: center;
-            margin: 0 0 0.1rem 0;
-        }
-
-        .buttonstyle {
-            font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
-            min-width:140px;
-            cursor:pointer;
-            font-weight: bold;
-            background:#dff7e6;
-            color: #000000;
-            border:1px solid #c6efcf;
-            padding:0.5rem 1rem;
-            border-radius:12px;
-            box-shadow:0 2px 6px rgba(0,0,0,0.08);
-            transition:background 150ms ease;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="sources/styles.css">
 </head>
 <body>
     <div class="container">
@@ -191,7 +91,7 @@
                     </td>
 
                     <td style="vertical-align:top; padding-left:0.5rem; padding-top: 2rem; text-align:center;">
-                        <button type="button" class="buttonstyle">Szobafoglalás</button>
+                        <button type="button" class="buttonstyle" onclick="window.location.href='reservation.html';">Szobafoglalás</button>
                     </td>
                 </tr>
 
@@ -244,7 +144,7 @@
         </div>
 
         <div class="section" style="text-align: center;">
-            <button type="button" class="buttonstyle">Less be jegyesfotózásunk legszebb pillanataiba! (tavasztól)</button>
+            <button type="button" class="buttonstyle" onclick="window.location.href='fromspring.html';">Less be jegyesfotózásunk legszebb pillanataiba! (tavasztól)</button>
         </div>
 
         <div class="section">
@@ -262,7 +162,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;">Allergiás vagyok, mire figyeljek? </h3>
+                    <p style="display:inline; margin:0;">Allergiás vagyok, mire figyeljek? </p>
                 </summary>
                 <p style="text-align: center;">ÉTELALLERGIÁD kérjük időben jelezd a visszajelző íven és a vacsora rendelésénél arra figyelemmel leszünk. A
                 kúria kertjében számos virágzó növény található és az őket beporzó rovarok. A kert nem telepített, szabadon
@@ -274,7 +174,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;">Milyen nászajándéknak örülne az ifjú pár?</h3>
+                    <p style="display:inline; margin:0;">Milyen nászajándéknak örülne az ifjú pár?</p>
                 </summary>
                 <p>Ha szeretnél megajándékozni minket, akkor kérjük, azt anyagiak formájában tedd, mert azt tudjuk a legjobban
                 hasznosítani. Minden nekünk szánt kedvességet előre is köszönünk!</p>
@@ -284,7 +184,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;">Mikor tudom odaadni a nászajándékot?</h3>
+                    <p style="display:inline; margin:0;">Mikor tudom odaadni a nászajándékot?</p>
                 </summary>
                 <p style="text-align: center;">A hagyományoktól eltérően nem lesz menyasszonytánc, így a nekünk szánt ajándékot, gratulációt a szertartás után,
                     egy közös fotó készítésével egybekötve tudod majd átadni. Erre a célra asztalt és dobozt is helyezünk majd ki,
@@ -295,7 +195,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;">Hoznék némi háztáji süteményt, itókát, vihetek?</h3>
+                    <p style="display:inline; margin:0;">Hoznék némi háztáji süteményt, itókát, vihetek?</p>
                 </summary>
                 <p style="text-align: center;">A szertartás előtt és a vacsora alatt is bőséges választékkal készülünk, erre ne legyen gondod.</p>
             </details>
@@ -304,7 +204,7 @@
         <div class="section">
             <details>
                 <summary>
-                     <h3 style="display:inline; margin:0;">A kis kedvencem velem jöhet?</h3>
+                     <p style="display:inline; margin:0;">A kis kedvencem velem jöhet?</p>
                 </summary>
                 <p style="text-align: center;">Kérjük kisállatod ne hozd magaddal.</p>
             </details>
@@ -313,7 +213,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;">Mikor tudunk közös képet készíteni?</h3>
+                    <p style="display:inline; margin:0;">Mikor tudunk közös képet készíteni?</p>
                 </summary>
                 <p style="text-align: center;">A szertartás után profi fotósaink fognak gondoskodni minden egyéni és csoportos kép elkészítéséről.</p>
             </details>
@@ -322,7 +222,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;"> Gyerekkel érkeznék, mire számíthatok?</h3>
+                    <p style="display:inline; margin:0;"> Gyerekkel érkeznék, mire számíthatok?</p>
                 </summary>
                 <p style="text-align: center;">A kúria kertjében játszótér várja a legkisebbeket és a park is sok lehetőséget rejt a kalandszerzésre. A lovas
                 kifutó szintén izgalmas látványt nyújthat számukra. A legjobb mégiscsak az, ha a kedvenc (1db) játékuk velük
@@ -335,7 +235,7 @@
         <div class="section">
             <details>
                 <summary>
-                    <h3 style="display:inline; margin:0;"> Honnan fogom tudni, hogy mikor, mi történik és hova kell menni?</h3>
+                    <p style="display:inline; margin:0;"> Honnan fogom tudni, hogy mikor, mi történik és hova kell menni?</p>
                 </summary>
                 <p style="text-align: center;">Ceremóniamesterünk fogja mindig mondani a hasznos információkat, kérjük hallgass rá. Tőle és a koszorúslányoktól
                 bármikor kérdezhetsz. Ezenkívül a kihelyezett táblákról és a honlapon található programból tájékozódhatsz.</p>

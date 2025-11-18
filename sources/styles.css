@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+    background-image: url('background.png');
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2); /* white overlay, 0.5 opacity */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8); /* white overlay, 0.5 opacity */
+    margin: 3rem auto;
+    max-width: 700px;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+p {
+    vertical-align:top;
+    text-align:center;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+details {
+    text-align:center;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+summary {
+    cursor: pointer;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+.section {
+    margin-bottom: 2em;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+.mark {
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+.italic {
+    font-style: italic;
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+}
+
+.countdown-style {
+    vertical-align: top;
+    padding-right: 0.1rem;
+    align-items: center;
+    font-size: 36px;
+    text-align: center;
+}
+
+.countdowntext {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 0.1rem 0;
+}
+
+.buttonstyle {
+    font-family: 'Baskerville Old Face', Baskerville, 'Times New Roman', serif;
+    min-width:140px;
+    cursor:pointer;
+    font-weight: bold;
+    background:#dff7e6;
+    color: #000000;
+    border:1px solid #c6efcf;
+    padding:0.5rem 1rem;
+    border-radius:12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    transition:background 150ms ease;
+    font-size: 18px;
+}
